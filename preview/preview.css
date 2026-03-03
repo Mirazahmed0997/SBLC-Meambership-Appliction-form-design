@@ -1,0 +1,118 @@
+
+body{
+  background:#eee;
+  display:flex;
+  justify-content:center;
+  padding:20px;
+}
+
+
+.form{
+  width:800px;
+  /* margin:10px auto; */
+  padding:40px;
+  border:1px solid #ccc;
+  font-family:"Times New Roman", Times, serif;
+  line-height:1.4;
+  color:#800000;
+  background-color:#fff;
+  font-size:10px;
+}
+
+.header{
+  text-align:center;
+  margin-bottom:10px;
+  border-bottom:2px solid #800000;
+  padding-bottom:10px;
+}
+
+.row{
+  display:flex;
+  justify-content:space-between;
+  margin-bottom:10px;
+}
+
+.input-line{
+  border:none;
+  border-bottom:1px dotted #000;
+  outline:none;
+  min-height:20px;
+}
+
+.flex{
+  display:flex;
+  margin-top:10px;
+}
+
+.flex input{
+  flex:1;
+  margin-left:5px;
+}
+
+.section-list{
+  margin-top:20px;
+}
+
+.section-list .item{
+  display:flex;
+  margin-bottom:8px;
+}
+
+.section-list .label{
+  min-width:250px;
+}
+
+.footer{
+  display:flex;
+  justify-content:space-between;
+  margin-top:10px;
+}
+
+.seal-box{
+  width:150px;
+  height:80px;
+  border:1px dashed #ccc;
+  margin-bottom:5px;
+  margin-top:40px;
+}
+
+.right-footer{
+  width:300px;
+}
+
+.small-input{
+  border:none;
+  border-bottom:1px dotted #000;
+  outline:none;
+  flex:1;
+  margin-left:5px;
+}
+
+.print-btn{
+  position:fixed;
+  top:20px;
+  right:20px;
+  padding:10px 20px;
+  font-size:16px;
+  background:#800000;
+  color:white;
+  border:none;
+  border-radius:5px;
+  cursor:pointer;
+}
+
+.print-btn:hover{
+  background:#a00000;
+}
+
+
+@media print {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+     .print-btn {
+    display: none !important;
+  }
+}
